@@ -26,6 +26,8 @@ PostalCode.format("j1k4")
 // "J1K 4"
 ```
 
+In user entry, the space at character 4 might be significant. (ie. I typed "A1B" vs "A1B ")
+
 Applied to a complete postal code, `.normalize` is equivalent to `.format`.
 
 ### .matchPrefix(string)
