@@ -28,14 +28,16 @@ PostalCode.format("j1k4")
 
 Applied to a complete postal code, `.normalize` is equivalent to `.format`.
 
-### .guessRegion(string)
-Returns an abbreviation of the province or territory, based on the first character (or 2 first).
+### .matchPrefix(string)
+Returns an abbreviation of the province or territory, based on the first character (or 3 first).
 
 ```js
-PostalCode.guessRegion("G1A 1A1")
+PostalCode.matchPrefix("G1A 1A1")
 // "QC"
 ```
 
 *Abbreviations follow [ISO 3166-2:CA][30].*
+
+Data as a list of prefix–region pairs is available in [prefixes.json](prefixes.json) and in the public domain.
 
 [30]: https://en.wikipedia.org/wiki/Canadian_postal_abbreviations_for_provinces_and_territories#Names_and_abbreviations
